@@ -1,0 +1,244 @@
+* {
+
+  margin: 0;
+  padding: 0;
+}
+
+html {
+
+  scroll-behavior: smooth;
+}
+
+body{
+  background-color: #1695DA;
+  margin: 0 auto;
+}
+
+header{
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+div.title-box{
+  background-color:white;
+  position: absolute;
+  z-index: 999;
+  padding: 20px;
+  top: 180px;
+  box-shadow: 12px 12px 2px 1px rgba(0, 0, 0, 7);
+
+}
+ 
+.title-box h1 {
+  font-family: "Kenia", sans-serif;
+  color: blue;
+}
+
+.title-box p {
+  font-family: "Kenia", sans-serif;
+  color: blue;
+
+}
+
+
+
+
+ 
+  
+
+
+/* slider */
+
+.slider{
+  overflow: hidden;
+}
+
+.slides{
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  animation: glisse 15s infinite ease;
+  width: calc(500px * 4);
+  height: 500px;
+}
+
+
+
+
+@keyframes glisse{
+
+     0%{
+      transform: translateX(0);
+     }
+
+     10%{
+      transform: translateX(0px);
+     }
+
+     33%{
+      transform: translateX(-500px);
+     }
+
+     66%{
+      transform: translateX(-200);
+     }
+
+     100%{
+       transform: translateX(0); 
+     }
+}
+
+.slides{
+  opacity: 0.5;
+}
+
+/* naigation menu*/
+
+.section-menu{
+  width: 100%;
+  
+ 
+  transform: translateY(-130px);
+}
+
+.nav-menu{
+  width: calc(500px*4);
+}
+
+
+nav.menu ul {
+  display:flex;
+  flex-direction: row;
+
+}
+nav.menu ul li{
+  list-style: none;
+  display: flex ;
+  color: white;
+  align-items: center;
+  justify-content: center;
+}
+
+nav.menu ul li a {
+  color: white;
+  font-size: 50px;
+  font-family: "Kenia", sans-serif;
+  text-decoration: none;
+  text-align: center;
+}
+
+.pizza{
+  background: url(../images/pizza-banner.jpg) 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.salade{
+  background: url(../images/salad-banner.jpg) 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.burger{
+
+  background: url(../images/burger-banner.jpg) 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.boissons{
+  background: url(../images/boisson-banner.jpg) 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.nav-item{
+  height: 200px;
+  flex: 1;
+  
+}
+
+
+nav.menu ul li:hover {
+     transform: scale(0.90);
+     transition: 0.3s all;
+}
+
+/* section plats*/
+
+.item{
+
+  background-color: white;
+  margin: 20px;
+  display:flex;
+  cursor: pointer;
+  transition: 0.3s all;
+ 
+  
+}
+.item img{
+  transition: 0.3s;
+}
+
+
+.item img:hover{
+  transform: scale(1.1);
+}
+
+section{
+  padding: 50px;
+ 
+  
+}
+ section img{
+  width: 330px;
+  
+ }
+ 
+.item:hover{
+  transition: 0.3s;
+  box-shadow: -8px 13px 2px 1px rgba(0, 0, 0, .1);
+} 
+
+.item-infos {
+
+  padding:20px;
+  line-height: 40px;
+}
+
+.item-infos{
+  font-size: 20px;
+}
+
+.item-infos hr {
+
+  margin-top: 10px 0 10 0 ;
+  opacity: 0.5;
+}
+
+.price {
+
+  font-weight: bold;
+  font-size: 22 px;
+}
+
+/* menu bloque a droite */
+.sticky{
+
+  position: fixed;
+  width: 500px;
+  right: 40px;
+  top:400px;
+ 
+}
+ .nav.menu ul {
+  flex-direction: column;
+}
+
+.nav ul li {
+  flex-direction: column;
+  box-shadow: -10px 10px 2px 1px rgba(0, 0, 0, .1);
+}
